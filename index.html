@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bra Size Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find Your Perfect Bra Size</h1>
+    <form id="bra-size-form">
+      <!-- Measurement Inputs -->
+      <div class="input-group">
+        <label for="underbust">Underbust Measurement (in inches):</label>
+        <input type="number" id="underbust" placeholder="e.g., 32" required>
+      </div>
+      <div class="input-group">
+        <label for="bust">Bust Measurement (in inches):</label>
+        <input type="number" id="bust" placeholder="e.g., 36" required>
+      </div>
+
+      <!-- Additional Filters -->
+      <h2>Filters</h2>
+      <div class="input-group">
+        <label for="clothing-type">Type of Clothing:</label>
+        <select id="clothing-type">
+          <option value="saree">Saree</option>
+          <option value="crop-top">Crop Top</option>
+          <option value="corset">Corset</option>
+          <option value="swimwear">Swimwear</option>
+          <option value="sundress">Sundress</option>
+          <option value="sports-bra">Sports Bra</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="fabric">Preferred Fabric:</label>
+        <select id="fabric">
+          <option value="cotton">Cotton</option>
+          <option value="lace">Lace</option>
+          <option value="satin">Satin</option>
+          <option value="mesh">Mesh</option>
+        </select>
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="submit">Calculate Bra Size</button>
+    </form>
+
+    <!-- Output -->
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
